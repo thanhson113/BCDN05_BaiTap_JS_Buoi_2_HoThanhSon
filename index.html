@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap JS-2</title>
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Bài 3: Quy đổi tiền -->
+        <div class="w-50 m-auto py-5 px-5  border border-dark rounded">
+            <form>
+                <div class="form-group">
+                    <h2 class="text-center">Quy đổi USD => VND</h2>
+                    <div id="txtResult" class="alert alert-primary text-center h1" role="alert" style="min-width:100px">
+
+                    </div>
+
+                    <label for="exampleInputEmail1">Nhập số tiền</label>
+                    <input type="text" class="form-control" id="txtUSD" 
+                        placeholder="Enter USD">
+                </div>
+                <button type="button" class="btn btn-primary w-100" onclick="changeCoin()">Convert</button>
+
+            </form>
+        </div>
+        <!-- Bài 4: Tính chu vi, diện tích hcn -->
+        <div style="margin: 50px auto;" class="w-50   px-5 py-5  border border-dark rounded">
+            <form>
+                <div class="form-group">
+                    <h2 class="text-center">Tính Chu vi và Diện tích hình chữ nhật</h2>
+                    <div id="txtResult2" class="alert alert-primary text-center " role="alert" style="min-width:100px">
+                    </div>
+                    <div id="txtResult3" class="alert alert-primary text-center " role="alert" style="min-width:100px">
+                    </div>
+                    <label for="exampleInputEmail1">Nhập chiều rộng</label>
+                    <input type="text" class="form-control" id="txtWidth" 
+                        placeholder="Enter Width">
+                    <label for="exampleInputEmail1">Nhập chiều dài</label>
+                    <input type="text" class="form-control" id="txtLong" 
+                        placeholder="Enter Long">
+                </div>
+                <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-danger mx-2 w-50" onclick="calPerRectangle()">Tính chu vi</button>
+                    <button type="button" class="btn btn-success w-50" onclick="calEreaRectangle()">Tính diện tích</button>
+                </div>
+            </form>
+        </div>
+        <!-- Bài 5: Tính tổng 2 kí số -->
+        <div class="w-50 m-auto py-5 px-5  border border-dark rounded">
+            <form>
+                <div class="form-group">
+                    <h2 class="text-center">Tính tổng 2 kí số</h2>
+                    <div id="txtResult4" class="alert alert-primary text-center " role="alert" style="min-width:100px">
+
+                    </div>
+
+                    <label for="exampleInputEmail1">Nhập số có 2 chữ số</label>
+                    <input type="text" class="form-control" id="txtNum" 
+                        placeholder="Enter Number">
+                </div>
+                <button type="button" class="btn btn-warning w-100" onclick="calSum()">Tính tổng</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
